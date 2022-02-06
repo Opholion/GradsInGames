@@ -251,7 +251,8 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.08}
   m_LocalScale: {x: 5.0933003, y: 3.8017004, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 7528878521673582031}
   m_Father: {fileID: 3798648783043898143}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -605,14 +606,98 @@ MonoBehaviour:
   - {r: 0.8207547, g: 0.2206746, b: 0.2206746, a: 1}
   - {r: 0.8584906, g: 0.125534, b: 0.125534, a: 1}
   - {r: 1, g: 0, b: 0, a: 1}
-  HighlightedPathColour: {r: 0.7169812, g: 0, b: 0, a: 0}
+  heldUnit: {fileID: 0}
   HighlightedImage: {fileID: 3882122715362236296}
+  HLImageDecal: {fileID: 187126372811661712}
   BackgroundImage: {fileID: 5548664275528986409}
   UserSelectedIcon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  FloorIcon: {fileID: 21300000, guid: 2ace0c12b5002d84a924ea16dd9e4f08, type: 3}
+  FloorIcon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   WallIcon: {fileID: 21300000, guid: bc1f0b5500abf3b4e8d0e03198796c46, type: 3}
-  isOptimized: 0
+  DecalList:
+  - {fileID: 21300000, guid: d62f47d2b0054a94aabe805b5323cff9, type: 3}
+  - {fileID: 21300000, guid: 5a2f304853b26bb43bc3b7e2baf43adf, type: 3}
+  - {fileID: 21300000, guid: d62f47d2b0054a94aabe805b5323cff9, type: 3}
+  - {fileID: 21300000, guid: d62f47d2b0054a94aabe805b5323cff9, type: 3}
+  - {fileID: 21300000, guid: d62f47d2b0054a94aabe805b5323cff9, type: 3}
+  - {fileID: 21300000, guid: d62f47d2b0054a94aabe805b5323cff9, type: 3}
+  - {fileID: 21300000, guid: 7c03ce650d8b13840ba1d06004d34f35, type: 3}
+  - {fileID: 21300000, guid: d62f47d2b0054a94aabe805b5323cff9, type: 3}
   IsScanned: 0
+--- !u!1 &5318202685090933683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7528878521673582031}
+  - component: {fileID: 608823318896564507}
+  - component: {fileID: 187126372811661712}
+  m_Layer: 5
+  m_Name: ButtomImageDecal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7528878521673582031
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5318202685090933683}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 642738939574072718}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 128, y: 128}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &608823318896564507
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5318202685090933683}
+  m_CullTransparentMesh: 1
+--- !u!114 &187126372811661712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5318202685090933683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2627451}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &8308490728497524964
 GameObject:
   m_ObjectHideFlags: 0
@@ -674,7 +759,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 77a85beeae10f6346a4f1c14ec360a1c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
